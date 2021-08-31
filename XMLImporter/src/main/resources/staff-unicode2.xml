@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<company name="test2">
+    <staff id="1002">
+        <firstname>揚2</firstname>
+        <lastname>木金2</lastname>
+        <nickname>mkyong2</nickname>
+        <salary currency="USD">1000002</salary>
+    </staff>
+    <staff id="2002">
+        <firstname>low2</firstname>
+        <lastname>yin fong2</lastname>
+        <nickname>fong fong2</nickname>
+        <salary currency="INR">2000002</salary>
+    </staff>
+</company>
