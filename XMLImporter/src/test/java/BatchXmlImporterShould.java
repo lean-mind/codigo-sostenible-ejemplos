@@ -18,9 +18,8 @@ class BatchXmlImporterShould {
         FileFinder finder = new FileFinder();
         BatchXmlImporter batchXmlImporter = new BatchXmlImporter(dao, finder);
         dao.clearTables();
-        final String fileExtension = "xml";
 
-        batchXmlImporter.importFiles(path, fileExtension);
+        batchXmlImporter.importFiles(path);
 
         var companies = dao.getAllCompanies();
         assertThat(companies).hasSize(2);

@@ -12,7 +12,7 @@ public class GetAllXmlFilesFromFolderPathShould {
 
     @Test
     public void read_only_xml_files_from_folder_path() throws IOException {
-        final String fileExtension = "xml";
+        final String fileExtension = ".xml";
         List<Path> paths = new FileFinder().findAllFiles(path, fileExtension);
         assertThat(paths).hasSize(2);
     }
