@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FileFinder {
-    public List<Path> findAllXmlPathsIn(String folderPath) throws IOException {
-        return Files.walk(Path.of(folderPath))
+    public List<Path> findAllFiles(Path folderPath, String fileExtension) throws IOException {
+        return Files.walk(folderPath)
                 .filter(Files::isRegularFile)
                 .filter(filePath ->
                         filePath.toString()
-                                .endsWith(".xml"))
+                                .endsWith(fileExtension))
                 .collect(Collectors.toList());
     }
 }
